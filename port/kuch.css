@@ -1,0 +1,667 @@
+#bot {
+    width: 100%;
+    height: 50px;
+    background: #000;
+    position: absolute;
+    bottom: 0px;
+}
+
+#about {
+    width: 100%;
+    height: 40rem;
+    background-color: #050709;
+}
+
+#skill {
+    width: 100%;
+    height: 65rem;
+    background-color: #050709;
+}
+
+#project {
+    width: 100%;
+    height: 58rem;
+    background-color: rgb(41 40 54);
+}
+
+#subhome1 {
+    width: 50%;
+    height: 40rem;
+    background-color: rgb(228, 130, 130);
+    position: absolute;
+    margin-top: 3rem;
+    right: 0px;
+}
+
+
+/* hiiiiiiii */
+
+.ml11 {
+    font-weight: 700;
+    font-size: 3.5em;
+}
+
+.ml11 .text-wrapper {
+    position: relative;
+    display: inline-block;
+    padding-top: 0.1em;
+    padding-right: 0.05em;
+    padding-bottom: 0.15em;
+}
+
+.ml11 .line {
+    opacity: 0;
+    position: absolute;
+    left: 0;
+    height: 100%;
+    width: 3px;
+    background-color: #da4343;
+    transform-origin: 0 50%;
+}
+
+.ml11 .line1 {
+    top: 0;
+    left: 0;
+}
+
+.ml11 .letter {
+    display: inline-block;
+    line-height: 1em;
+}
+
+#hello {
+    justify-content: center;
+    align-items: center;
+}
+
+.letters {
+    color: #e4a7d0;
+}
+
+
+/* image */
+
+img {
+    height: 20rem;
+    border-radius: 17px;
+}
+
+
+/* about me */
+
+#abtme {
+    color: aliceblue;
+}
+
+#baap {
+    height: 100px;
+    width: 100%;
+    background-color: #050709;
+    height: 36rem;
+}
+
+#right {
+    height: 34rem;
+    background-color: #050709;
+    width: 50%;
+    margin-top: 0rem;
+    float: right;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#left {
+    background-color: #050709;
+    height: 34rem;
+    width: 50%;
+    margin-top: 0rem;
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#para {
+    font-family: italic;
+    color: aliceblue;
+}
+
+
+/* end of hom */
+
+
+/* start of skill */
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arvo';
+}
+
+body {
+    background-color: #E63946;
+}
+
+.main {
+    height: 38vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+h1 {
+    text-align: center;
+    text-transform: uppercase;
+    color: #F1FAEE;
+    font-size: 4rem;
+    font-weight: bolder;
+}
+
+.roller {
+    height: 4.125rem;
+    line-height: 4rem;
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #1D3557;
+}
+
+#spare-time {
+    font-size: 1rem;
+    font-style: italic;
+    letter-spacing: 1rem;
+    margin-top: 0;
+    color: #A8DADC;
+}
+
+.roller #rolltext {
+    position: absolute;
+    top: 0;
+    animation: slide 5s infinite;
+}
+
+@keyframes slide {
+    0% {
+        top: 0;
+    }
+    25% {
+        top: -4rem;
+    }
+    50% {
+        top: -8rem;
+    }
+    72.5% {
+        top: -12.25rem;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    h1 {
+        text-align: center;
+        text-transform: uppercase;
+        color: #F1FAEE;
+        font-size: 2.125rem;
+    }
+    .roller {
+        height: 2.6rem;
+        line-height: 2.125rem;
+    }
+    #spare-time {
+        font-size: 1rem;
+        letter-spacing: 0.1rem;
+    }
+    .roller #rolltext {
+        animation: slide-mob 5s infinite;
+    }
+    @keyframes slide-mob {
+        0% {
+            top: 0;
+        }
+        25% {
+            top: -2.125rem;
+        }
+        50% {
+            top: -4.25rem;
+        }
+        72.5% {
+            top: -6.375rem;
+        }
+    }
+}
+
+#title {
+    color: #F1FAEE;
+}
+
+#skillsaquired {
+    display: flex;
+    width: 100%;
+    height: 64px;
+    justify-content: center;
+    align-items: center;
+    background-color: #050709;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Roboto:300');
+.animate {
+    display: inline-block;
+    overflow: hidden;
+    white-space: nowrap;
+    font-size: 2rem;
+    color: rgb(211, 54, 54);
+    text-transform: uppercase;
+    margin: 0 0 0 15px;
+}
+
+.animate:first-of-type {
+    /* For increasing performance 
+                       ID/Class should've been used. 
+                       For a small demo 
+                       it's okaish for now */
+    animation: showup 7s infinite;
+}
+
+.animate:last-of-type {
+    width: 0px;
+    animation: reveal 7s infinite;
+}
+
+.animate:last-of-type span {
+    margin-left: -355px;
+    animation: slidein 7s infinite;
+}
+
+@keyframes showup {
+    0% {
+        opacity: 0;
+    }
+    20% {
+        opacity: 1;
+    }
+    80% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes slidein {
+    0% {
+        margin-left: -800px;
+    }
+    20% {
+        margin-left: -800px;
+    }
+    35% {
+        margin-left: 0px;
+    }
+    100% {
+        margin-left: 0px;
+    }
+}
+
+@keyframes reveal {
+    0% {
+        opacity: 0;
+        width: 0px;
+    }
+    20% {
+        opacity: 1;
+        width: 0px;
+    }
+    30% {
+        width: 355px;
+    }
+    80% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+        width: 355px;
+    }
+}
+
+#jose {
+    margin: 0 0 0 220px;
+}
+
+
+/* skills js html etc */
+
+.inline {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+#htmls {
+    width: 10rem;
+    height: 10rem;
+    background-color: #050709;
+    margin-right: 2rem;
+    margin-bottom: 3rem;
+}
+
+#csss {
+    width: 10rem;
+    height: 10rem;
+    background-color: #050709;
+    margin-right: 5px;
+    margin-bottom: 3rem;
+    margin-right: 2rem;
+}
+
+#javascript {
+    width: 10rem;
+    height: 10rem;
+    background-color: #050709;
+    margin-right: 5px;
+    margin-bottom: 3rem;
+    margin-right: 2rem;
+}
+
+#reactjs {
+    width: 10rem;
+    height: 10rem;
+    background-color: #050709;
+    margin-right: 5px;
+    margin-bottom: 3rem;
+    margin-right: 2rem;
+}
+
+#native {
+    width: 10rem;
+    height: 10rem;
+    background-color: #050709;
+    margin-right: 5px;
+    margin-right: 2rem;
+}
+
+#redux {
+    width: 10rem;
+    height: 10rem;
+    background-color: #050709;
+    margin-right: 5px;
+    margin-right: 2rem;
+}
+
+#nodejs {
+    width: 10rem;
+    height: 10rem;
+    background-color: #050709;
+    margin-right: 5px;
+    margin-right: 2rem;
+}
+
+#socket {
+    width: 10rem;
+    height: 10rem;
+    background-color: #050709;
+    margin-right: 5px;
+    margin-right: 2rem;
+}
+
+#next {
+    width: 10rem;
+    height: 10rem;
+    background-color: #050709;
+    margin-right: 5px;
+    margin-right: 2rem;
+}
+
+.inl {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 45px;
+}
+
+#cc {
+    width: 10rem;
+    height: 10rem;
+    background-color: #050709;
+    margin-right: 2rem;
+    margin-bottom: 3rem;
+}
+
+#cplus {
+    width: 10rem;
+    height: 10rem;
+    background-color: #050709;
+    margin-right: 2rem;
+    margin-bottom: 3rem;
+}
+
+#java {
+    width: 10rem;
+    height: 10rem;
+    background-color: #050709;
+    margin-right: 2rem;
+    margin-bottom: 3rem;
+}
+
+.inline div img {
+    width: 156px;
+    height: 156px;
+}
+
+.inl div img {
+    width: 156px;
+    height: 156px;
+}
+
+@media (min-width:389px)and (max-width:910px) {
+    .inline {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 10px;
+    }
+    #htmls {
+        width: 4rem;
+        height: 4rem;
+        background-color: #050709;
+        margin-right: 2rem;
+        margin-bottom: 3rem;
+    }
+    #csss {
+        width: 4rem;
+        height: 4rem;
+        background-color: #050709;
+        margin-right: 5px;
+        margin-bottom: 3rem;
+        margin-right: 2rem;
+    }
+    #javascript {
+        width: 4rem;
+        height: 4rem;
+        background-color: #050709;
+        margin-right: 5px;
+        margin-bottom: 3rem;
+        margin-right: 2rem;
+    }
+    #reactjs {
+        width: 4rem;
+        height: 4rem;
+        background-color: #050709;
+        margin-right: 5px;
+        margin-bottom: 3rem;
+        margin-right: 2rem;
+    }
+    /* 2nd line  */
+    /* #native {
+        width: 4rem;
+        height: 4rem;
+            background-color: #050709;
+
+        margin-right: 5px;
+        margin-right: 2rem;
+    } */
+    #redux {
+        width: 4rem;
+        height: 4rem;
+        background-color: #050709;
+        margin-right: 5px;
+        margin-right: 2rem;
+    }
+    #nodejs {
+        width: 4rem;
+        height: 4rem;
+        background-color: #050709;
+        margin-right: 5px;
+        margin-right: 2rem;
+    }
+    #socket {
+        width: 4rem;
+        height: 4rem;
+        background-color: #050709;
+        margin-right: 5px;
+        margin-right: 2rem;
+    }
+    #next {
+        width: 4rem;
+        height: 4rem;
+        background-color: #050709;
+        margin-right: 5px;
+        margin-right: 2rem;
+    }
+    /* 3rd line  */
+    #cc {
+        width: 4rem;
+        height: 4rem;
+        background-color: #050709;
+        margin-right: 2rem;
+        margin-bottom: 3rem;
+    }
+    #cplus {
+        width: 4rem;
+        height: 4rem;
+        background-color: #050709;
+        margin-right: 2rem;
+        margin-bottom: 3rem;
+    }
+    #java {
+        width: 4rem;
+        height: 4rem;
+        background-color: #050709;
+        margin-right: 2rem;
+        margin-bottom: 3rem;
+    }
+    .inline div img {
+        width: 60px;
+        height: 60px;
+    }
+    .inl div img {
+        width: 60px;
+        height: 57px;
+    }
+    img {
+        height: 20rem;
+        border-radius: 17px;
+        width: 10rem;
+    }
+}
+
+#title h1 {
+    color: aquamarine;
+    font-size: 1rem;
+}
+
+#light {
+    position: relative;
+    top: 150px;
+}
+
+#lineh12 {
+    position: absolute;
+    right: 0;
+    top: 340px;
+    height: 1px;
+    background: #85B085;
+    width: 100%;
+    animation: lineH 8s 4s infinite linear;
+}
+
+
+/* @keyframes lineH {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 100%;
+    }
+} */
+
+#procont1 {
+    width: 49%;
+    background-color: #da4343;
+    height: 300px;
+    float: left;
+    margin-bottom: 2px;
+}
+
+#procont2 {
+    width: 49%;
+    background-color: #da4343;
+    height: 300px;
+    float: right;
+    margin-bottom: 2px;
+}
+
+ul li {
+    list-style-type: none;
+    text-transform: uppercase;
+    color: aliceblue;
+}
+
+#lines {
+    width: 100%;
+    height: 22rem;
+    background-color: #212b39;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid black;
+}
+
+#cart {
+    height: 23rem;
+    width: 100%;
+    background-color: antiquewhite;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(41 40 54);
+}
+
+.card img {
+    height: 60px;
+    width: 91px;
+    margin: 2px 0px 0px 95px;
+}
+
+#heads {
+    color: #e02642;
+}
+
+#spans {
+    color: #d0e137;
+}
+
+@media (min-width: 900px) and (max-width: 10000px) {
+    #right img {
+        width: 300px;
+        height: 349px;
+    }
+}
